@@ -1,14 +1,14 @@
-//
-//  main.cpp
-//  WYMIANA - Zamiana miejsc
-//
-//  Created by Kasia on 25/03/2021.
-//
+#include<stdio.h>
 
-#include <iostream>
+int main()
+{
+    int x, y;
+    scanf("%d %d",&x,&y);
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    x = x - y;
+    y = x + y;
+    x = y - x;
+
+    printf("%d %d",x,y);
     return 0;
 }
